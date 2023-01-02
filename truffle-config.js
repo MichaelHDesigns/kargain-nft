@@ -7,9 +7,9 @@ const infura = process.env["INFURA_PROJECT_ID"]
 module.exports = {
    networks: {
     local: {
-      provider: () => new HDWalletProvider(mnemonicPrivateKey, "http://localhost:7545"),
-      port: 7545,            // Standard BSC port (default: none)
-      network_id: "5777",       // Any network (default: none)
+      provider: () => new HDWalletProvider(mnemonicPrivateKey, "http://localhost:8545"),
+      port: 8545,            // Standard BSC port (default: none)
+      network_id: "2330",       // Any network (default: none)
     },
     testnet: {
       provider: () => new HDWalletProvider(mnemonicPrivateKeyTesnet, `https://data-seed-prebsc-1-s1.binance.org:8545`),
